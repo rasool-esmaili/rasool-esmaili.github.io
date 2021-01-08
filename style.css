@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400');
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.bg {
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  background: white;
+}
+@media (min-width: 500px) {
+  .card {
+    width: 490px;
+  }
+}
+.card .avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card .avatar img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.card .info {
+  padding: 15px;
+}
+.card .info .name {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.card .info .expert {
+  opacity: 0.4;
+  margin-bottom: 10px;
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+}
+.card .info .bio {
+  font-size: 16px;
+  margin-top: 2%;
+}
+.card .info .bio a {
+  color: black;
+  opacity: 0.4;
+  font-weight: bold;
+  font-size: 18px;
+  transition: all 250ms;
+}
+.card .info .bio a:hover {
+  opacity: 1;
+  color: black;
+}
+.card .info .social {
+  margin-top: 30px;
+  margin-bottom: 25px;
+}
+.card .info .social a {
+  padding: 0 5px;
+  font-size: 26px;
+  color: black;
+  opacity: 0.5;
+  transition: all 250ms;
+  margin-right: 15px;
+
+}
+.card .info .social a:hover {
+  opacity: 1;
+}
+
+.big{
+    font-family: 'Lobster', sans-serif;
+    font-size: 300%;
+    margin-top: -8%;
+}
+
+a{
+    text-decoration: none;
+}
